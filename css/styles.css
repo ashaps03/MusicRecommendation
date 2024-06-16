@@ -1,0 +1,188 @@
+html, body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    width: 100%;
+    min-height: 100vh; 
+    flex-direction: column; /* Stacks children vertically */
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
+    overflow: hidden; /* Prevents scrolling */
+    background: black url('../images/sign_in_gradient.png') no-repeat center / cover;
+}
+
+.parent-flex-container {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start; /* Adjust based on your design needs */
+    flex-wrap: wrap; /* Allows child elements to wrap onto the next line as needed */
+    margin-left: 4px;
+}
+
+.container, .tittle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    margin-top: 180px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 8px;
+    box-shadow: 0 4px 50px 10px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(100px);
+    height: 571px;
+    width: 603px!important;
+    border: 2px solid #B8B6EA;
+    margin-right: 1px;
+}
+
+.container h2 {
+    margin-bottom: 48px;
+}
+
+.tittle {
+    height: auto;
+    width: 603px!important;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 50px;
+
+}
+
+.tittle img {
+    padding-left:30px;
+}
+
+
+.tittle p {
+    font-size: 24px; /* More appropriate minimum font size */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    font-size: 32px;
+    border-radius: 50px;
+    padding: 8px 10px;
+    width: 485px;
+    height: 87px;
+    box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="password"] {
+    color: white;
+    margin-bottom: 25px;
+    border: 1px solid white;
+    background-color: rgba(217, 217, 217, 0);
+}
+
+input[type="submit"] {
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.09);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.05);
+    background-color: #9000FE;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: white;
+    opacity: 1;
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .body{
+        overflow: hidden; /* Prevents scrolling */
+
+    }
+    .tittle p {
+        font-size: 16px; /* More appropriate minimum font size */
+        text-align: center; /* Ensure it's centered as it goes on top */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .parent-flex-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .tittle, .container {
+        width: 90%; /* Ensures it fits within the viewport width */
+        order: 1; /* Title comes first */
+        padding: 10px; /* Reduces padding */
+        box-shadow: none; /* Removes any shadow that might cause overflow */
+        margin: 0,0,0,0!important;
+        margin-right: 0%!important;
+        margin-left: 0%!important;
+
+    }
+
+    .tittle p {
+        font-size: 20px; /* Ensures font size is readable and not too large */
+        text-align: center;
+        margin: 0,0,0,0!important;
+        margin-left: 10px!;
+        margin-right: 190px!important;
+        margin-top: 1px!important;
+    }
+
+    .tittle img{
+        width: 600px;
+        height: auto;
+        padding-left:0px!important;
+        padding-right:190px!important;
+    }
+
+    .container {
+        align-self: stretch;
+        align-content: center;
+        order: 2;
+        margin-top: 0; /* Ensures there's no extra space pushing it down */
+        margin-right: 0px; /* Ensures there's no extra space pushing it right */
+        margin-left: 25px!important; /* Ensures there's no extra space pushing it right */
+        margin-bottom: 0;
+        width: 350px!important; /* Ensures it takes up the full width */
+        height: 350px!important; /* Ensures it takes up the full width */
+        font-size: 18px; /* Appropriately sized for mobile devices */
+
+    }
+
+    .container h2{
+        margin-bottom: 36px;;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+        width: 100%; /* Ensures input fields do not overflow their container */
+        font-size: 18px; /* Appropriately sized for mobile devices */
+        padding: 12px; /* Adequate padding for touch interaction */
+        margin-bottom: 5%;
+        height: 50px;
+    }
+
+    input[type="submit"] {
+        margin-top: 0!important;
+    }
+
+    input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    font-size: 18px; /* Appropriately sized for mobile devices */
+}
+}
+
