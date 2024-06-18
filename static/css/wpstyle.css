@@ -1,0 +1,65 @@
+/* Add styles for the form */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-step {
+    display: none;
+}
+
+.form-step-active {
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-next, .btn-prev {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-next {
+    float: right;
+}
+
+.btn-prev {
+    float: left;
+}
+
+.form-progress {
+    margin-top: 20px;
+}
+
+.form-progress-bar {
+    width: 33.33%;
+    height: 10px;
+    background-color: #007bff;
+    border-radius: 5px;
+}
