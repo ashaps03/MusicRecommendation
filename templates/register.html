@@ -21,7 +21,7 @@
             <div class="container mt-1 mr-5">
                 <form class="mt-4 ml-5 mr-5" id="signupForm" class="mt-4">
                     <h2  style="font-family: 'Inter', sans-serif; font-size: 40px; color: white; text-align: center; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);"><strong>Register</strong></h2>                    
-                    <input type="text" id="email" name="email" placeholder="Email" style="background-image: url('{{ url_for('static', filename='images/mail.png') }}'); background-repeat: no-repeat; background-position: calc(100% - 20px) center;" />
+                    <input type="text" id="email" name="email" placeholder="Email" style="background-image: url('{{ url_for('static', filename='images/mail.png') }}'); background-repeat: no-repeat; background-position: calc(100% - 20px) center;padding-left:30px;" />
                     <input type="password" id="password" name="password" placeholder="Password" style="background-image: url('{{ url_for('static', filename='images/lock.png') }}'); background-repeat: no-repeat; background-position: calc(100% - 20px) center; padding-left:30px;" />
                     <input class="mt-5 mb-3" type="submit" id="signUp" value="Sign Up">
                     <p style="text-align: center;">Already have an account? <a href="{{ url_for('index') }}">Sign In</a></p>
