@@ -20,7 +20,3 @@ onAuthStateChanged(auth, (user) => {
         }
     }
 });
-<<<<<<< HEAD
-testing
-=======
->>>>>>> 121574a3ce285602acc1e5deede7da00eb3f52a6
